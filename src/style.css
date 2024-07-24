@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgb(189, 184, 184);
+    border:  1px solid rgb(141, 140, 137);
+    margin-bottom:-15px;
+}
+
+.first {
+    background-color: rgb(233, 230, 230);
+    width: 750px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-left: 80px;
+    margin-top: 60px;
+    margin-right: 80px;
+    gap: 20px;
+    box-sizing: 50px;
+    border: solid rgb(160, 160, 156);
+    box-shadow: 10px 10px 10px 2px rgb(236, 233, 233);
+}
+img {
+    display: flex;
+
+    width: 160px;
+    height:180px;
+    margin: 5px;
+   
+}
+.para {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}

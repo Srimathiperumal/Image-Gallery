@@ -1,17 +1,57 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './style.css';
+import App from "./components/app";
+const root = ReactDOM.createRoot(document.getElementById('root'))
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const gallerys = [
+  {
+    img:"/assest/images/one.jpeg",
+    petname:"SleepingDog"
+  },
+  {
+    img:'/assest/images/two.jpg',
+    petname:"BigDog"
+  },
+  {
+    img:'/assest/images/three.jpeg',
+    petname:"SittingDog"
+  },
+  {
+    img:'/assest/images/four.jpg',
+    petname:"BlackDog"
+  },
+  {
+    img:'/assest/images/five.jpeg',
+    petname:"SmallDog"
+  },
+  {
+    img:'/assest/images/six.jpeg',
+    petname:"EyePinkDog"
+  },
+  {
+    img:'/assest/images/seven.jpeg',
+    petname:"BigEyeDog"
+  },
+  {
+    img:"/assest/images/eight.jpg",
+    petname:"TongueOutDog"
+  }
+]
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    
+  <div class="first" >
+      {
+          gallerys.map(function(item){
+              return<App  class="two" img ={item.img} petname={item.petname}></App>
+          })
+           }
+  </div>
+)
+ 
+
+
+
+
+
